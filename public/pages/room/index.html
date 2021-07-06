@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Clone - EW</title>
+
+    <link rel="stylesheet" href="./deps/style.css" />
+
+    <script src="./deps/font-awesome/font-awesome.js"></script>
+    <script defer src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="https://unpkg.com/socket.io-client@3.1.3/dist/socket.io.min.js" defer></script>
+
+    
+    <script src="src/util/util.js" defer></script>
+    <script src="src/util/media.js" defer></script>
+    <script src="src/util/socket.js" defer></script>
+    <script src="src/util/peer.js" defer></script>
+    <script src="src/util/recorder.js" defer></script>
+    <script src="src/view.js" defer></script>
+    <script src="src/business.js" defer></script>
+    <script src="src/app.js" defer></script>
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__left">
+        <div class="main__videos">
+          <div id="video-grid"></div>
+        </div>
+        <div class="main__controls ">
+          <div class="main__controls__block">
+            <div class="main__controls__button">
+              <i class="fas fa-user-friends badge-wrapper" title="Participants">
+                <span class="badge badge-secondary" id="participants">1</span>
+              </i>
+            </div>
+
+            <div id="record" class="main__controls__button" >
+              <i class="fa fa-circle-o" title="Record"></i>
+              <span>Record</span>
+            </div>
+            
+          </div>
+          <div class="main__controls__block">
+            <div class="main__controls__button">
+              <button id="leave" type="button" class="btn btn-danger">
+                End
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,17 +1,19 @@
+body{
+    background-color:#000;
+    overflow-y: hidden;
+}
 .main {
-    height: 100vh;
+    height: 98vh;
     display: flex;
+    margin: 0 auto;
 }
 
 .main__left {
-    flex: 0.8;
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.main__right {
-    flex: 0.2
-}
 
 .main__videos {
     flex-grow: 1;

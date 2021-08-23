@@ -3,8 +3,8 @@ const onload = () => {
   const room = urlParams.get("room");
   console.log("this is the room", room);
 
-  // const socketUrl = "https://zoom-backend-sudip.herokuapp.com/";
-  const socketUrl = "http://localhost:3000/";
+  const socketUrl = "https://zoom-backend-sudip.herokuapp.com/";
+  // const socketUrl = "http://localhost:3000/";
   const socketBuilder = new SocketBuilder({ socketUrl });
 
   const peerConfig = Object.values({
